@@ -23,8 +23,8 @@ const getCredentials = () => {
   if (process.env.NODE_ENV === 'development' && process.env.LOCAL_TESTING === 'true') {
     console.log('Using development testing credentials');
     return {
-      accessKeyId: 'AKIAU72LGKETY2RH2ZLS',
-      secretAccessKey: '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'
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
     };
   }
 
