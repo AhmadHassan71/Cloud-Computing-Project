@@ -1,0 +1,86 @@
+.register-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.register-image-container {
+  flex: 1;
+  background-image: url('../images/backgroundImage1.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: none;
+}
+
+.register-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  max-width: 70%;
+}
+
+.register-form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.register-form-content {
+  width: 100%;
+  max-width: 500px;
+}
+
+.register-card {
+  padding: 2rem;
+}
+
+.register-title {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.register-subtitle {
+  color: var(--text-color-light);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.register-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.register-footer p {
+  color: var(--text-color-light);
+  margin: 0;
+}
+
+.register-footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.register-footer a:hover {
+  color: var(--primary-color-dark);
+  text-decoration: underline;
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+  .register-image-container {
+    display: block;
+  }
+}

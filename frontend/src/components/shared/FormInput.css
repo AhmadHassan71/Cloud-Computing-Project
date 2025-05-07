@@ -1,0 +1,102 @@
+.form-input-container {
+  margin-bottom: 20px;
+}
+
+.form-input-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.required-indicator {
+  color: #dc3545;
+  margin-left: 2px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-wrapper .input-icon ~ .form-input,
+.input-wrapper .input-icon ~ .form-textarea {
+  padding-left: 40px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #AB845B;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(171, 132, 91, 0.25);
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-input-container.has-error .form-input,
+.form-input-container.has-error .form-textarea {
+  border-color: #dc3545;
+}
+
+.form-input-container.has-error .form-input:focus,
+.form-input-container.has-error .form-textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-input-error {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #dc3545;
+}
+
+.form-input-help {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+/* Disabled state */
+.form-input:disabled,
+.form-textarea:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+/* File input specific styling */
+input[type="file"].form-input {
+  padding: 8px;
+}
+
+/* Select input styles */
+select.form-input {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  padding-right: 2.5rem;
+}

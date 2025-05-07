@@ -1,0 +1,41 @@
+/* SideNavPanel */
+
+.sidenavpanel {
+    height: 100%;
+    width: 218px; /* Adjust the width as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #161616e7;
+    padding-top: 100px;
+    z-index: 1;
+  }
+  
+  .sidenavpanel h4{
+    margin-left: 10px;
+    color: #ffffff;
+  }
+  
+  /* Style for the links */
+  .sidenavpanel a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hover effect */
+  .sidenavpanel a:hover {
+    background-color: #AB845B!important;
+    color: #161616;
+  }
+  
+  /* Active link */
+  .sidenavpanel .active {
+    background-color: #AB845B;
+  }
+  
+  /* .sidenavcontent{
+    margin-left: 200px;
+    padding: 20px;
+  } */

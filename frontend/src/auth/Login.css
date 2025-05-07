@@ -1,0 +1,126 @@
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.login-image-container {
+  flex: 1;
+  background-image: url('../images/LandingImage.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: none;
+}
+
+.login-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  max-width: 70%;
+}
+
+.brand-name h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.brand-name p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-form-content {
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-card {
+  padding: 2rem;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.login-subtitle {
+  color: var(--text-color-light);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login-footer p {
+  color: var(--text-color-light);
+  margin: 0;
+}
+
+.login-footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.login-footer a:hover {
+  color: var(--primary-color-dark);
+  text-decoration: underline;
+}
+
+/* Testing mode styling */
+.testing-options {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--border-color);
+}
+
+.testing-options h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.testing-notice {
+  font-size: 0.85rem;
+  color: #ff9800;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testing-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+  .login-image-container {
+    display: block;
+  }
+}
