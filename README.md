@@ -1,13 +1,14 @@
-# MERN CRUD and Authentication Project
+# Cloud Computing Project with DynamoDB
 
-This project demonstrates basic CRUD operations along with user authentication using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+This project demonstrates basic CRUD operations along with user authentication using Amazon DynamoDB, Express.js, React.js, and Node.js.
 
 ## Project Structure
 
-The project repository is organized into two main folders:
+The project repository is organized into three main folders:
 
-- `backend`: Contains the backend server code developed using Node.js and Express.js.
+- `backend`: Contains the backend server code developed using Node.js and Express.js with DynamoDB integration.
 - `frontend`: Contains the frontend client code developed using React.js.
+- `terraform`: Contains infrastructure as code for AWS deployment.
 
 ## Local Setup
 
@@ -18,20 +19,20 @@ To set up this project on your local machine, follow these steps:
 Before you begin, make sure you have the following installed on your machine:
 
 - Node.js: You can download and install Node.js from [nodejs.org](https://nodejs.org).
-- MongoDB: You can download and install MongoDB from [mongodb.com](https://www.mongodb.com).
+- AWS CLI: Install and configure AWS CLI to work with DynamoDB. [Install AWS CLI](https://aws.amazon.com/cli/).
 
 ### Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yasirupanduka99/MERN_CRUD_Session_Y2S2.git
+    git clone [your-repository-url]
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd MERN_CRUD_Session_Y2S2
+    cd Cloud-Computing-Project
     ```
 
 3. Backend Setup:
@@ -44,7 +45,12 @@ Before you begin, make sure you have the following installed on your machine:
 
         ```
         PORT=5000
-        MONGO_URL=<your_mongo_db_connection_string>
+        AWS_REGION=<your_aws_region>
+        AWS_ACCESS_KEY_ID=<your_aws_access_key>
+        AWS_SECRET_ACCESS_KEY=<your_aws_secret_key>
+        DYNAMODB_ITEMS_TABLE=Items
+        DYNAMODB_ORDERS_TABLE=Orders
+        DYNAMODB_USERS_TABLE=Users
         SECRET_TOKEN=<your_secret_token>
         ```
 
@@ -96,7 +102,7 @@ For a containerized deployment, you can use Docker Compose to run both the front
 1. Navigate to the project root directory:
 
     ```bash
-    cd MERN_CRUD_Session_Y2S2
+    cd Cloud-Computing-Project
     ```
 
 2. Build and start the containers:
